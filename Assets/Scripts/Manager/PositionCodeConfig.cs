@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -25,10 +25,26 @@ public class LevelConfigs : ScriptableObject
     {
         return _Level;
     }
-} 
+}
 [System.Serializable]
 public class LevelConfig
 {
     public int _LevelID;
-    public List<Transform> _Transform;
+    [Header("Vị trí của codeSlot")]
+    public List<SlotCodeAttribute> SlotCode;
+    [Header("Vị trí của BlockCode")]
+    public List<BlockCodeAttribute> BlockCode;
+}
+[System.Serializable]
+public class SlotCodeAttribute
+{
+    public int _BlockID;
+    public Vector3 Position;
+}
+[System.Serializable]
+public class BlockCodeAttribute
+{
+    public int _BlockID;
+    public Vector3[] Position;
+    public string Content;
 }
