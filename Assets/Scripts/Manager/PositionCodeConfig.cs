@@ -30,6 +30,10 @@ public class LevelConfigs : ScriptableObject
 public class LevelConfig
 {
     public int _LevelID;
+    public Vector3 GatePosition;
+    [Header("Câu hỏi trong Level")]
+    [TextAreaAttribute]
+    public string QuestionContent;
     [Header("Vị trí của codeSlot")]
     public List<SlotCodeAttribute> SlotCodes;
     [Header("Vị trí của BlockCode")]
@@ -46,5 +50,6 @@ public class BlockCodeAttribute
 {
     public int _BlockID;
     public Vector3[] Position;
+    [TextAreaAttribute]
     public string Content;
 }
