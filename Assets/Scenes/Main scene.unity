@@ -4523,6 +4523,102 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!82 &762147163
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762147155}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: b66b41847de782e41adbab09a60b2dfa, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &772251312 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7704083737561874031, guid: 573c113741e3d4f428d78dbe6ed5a13f,
@@ -9464,7 +9560,7 @@ MonoBehaviour:
     QuestionContent: 
     SlotCodes: []
     BlockCodes: []
-  Gate: {fileID: 0}
+  Gate: {fileID: 5000668400650562420, guid: 47135e0636eae924bb81941b6a45e279, type: 3}
   CodeSlot: {fileID: 8429743378740945248, guid: ac1c3dbb2ea0aa942a57dc9f1d7109b0,
     type: 3}
   CodeBlock: {fileID: 6647727300257222838, guid: 8ab83d9ade7f73c4ab28f9ec730a06b2,
@@ -14591,6 +14687,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 762147161}
+    - targetCorrespondingSourceObject: {fileID: 2230447927607777127, guid: ab6504db92806c64c8d1b9a1c95da846,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 762147163}
   m_SourcePrefab: {fileID: 100100000, guid: ab6504db92806c64c8d1b9a1c95da846, type: 3}
 --- !u!1001 &4076086639678175692
 PrefabInstance:
