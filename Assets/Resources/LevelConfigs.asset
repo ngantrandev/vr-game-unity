@@ -32,3 +32,22 @@ MonoBehaviour:
       Position:
       - {x: 25.25, y: 0.13, z: 10.494}
       Content: day la code  moi
+  - _LevelID: 1
+    GatePosition: {x: 19.20743, y: -1.39, z: 7.02}
+    QuestionContent: 
+    SlotCodes:
+    - _BlockID: 0
+      Position: {x: 17.651, y: -1.228, z: 8.737}
+    - _BlockID: 1
+      Position: {x: 14.651, y: -1.228, z: 8.737}
+    BlockCodes:
+    - _BlockID: 0
+      Position:
+      - {x: 20.25, y: 0.13, z: 10.494}
+      - {x: 20.25, y: 0.13, z: 10.494}
+      - {x: 20.25, y: 0.13, z: 10.494}
+      Content: PrintHelloWord
+    - _BlockID: 1
+      Position:
+      - {x: 25.25, y: 0.13, z: 10.494}
+      Content: day la code  moi

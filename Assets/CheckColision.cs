@@ -19,8 +19,15 @@ public class CheckColision : MonoBehaviour
     {
         if (other.gameObject.tag == "MainCamera")
         {
+            if ((GameManager.Instance._CurrentLevel + 1) < 2)
+            { 
+                GameManager.Instance.GetConfigLevel(GameManager.Instance._CurrentLevel + 1);
+            }
+            else
+            {
+                GameManager.Instance.OnHomeScene();
+            }
             //GameManager.Instance.StartGameLevel_2();
-            GameManager.Instance.OnHomeScene();
         }
 
     }
