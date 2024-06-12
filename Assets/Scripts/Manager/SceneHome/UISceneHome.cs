@@ -6,10 +6,13 @@ using UnityEngine.UI;
 
 public class UISceneGame : MonoSingleton<UISceneGame>
 {
-    public Button BtnStartGame;
+    public Transform DialogTransform;
     // Start is called before the first frame update
     void Start()
     {
+        UIManager.Instance.DialogTransform = DialogTransform;
+        UIManager.Instance.ShowDialogStartGame();
+        //StartDialog.Show();
     }
 
     // Update is called once per frame
@@ -17,12 +20,5 @@ public class UISceneGame : MonoSingleton<UISceneGame>
     {
         
     }
-    public void HandleButtonStartGame()
-    {
-        UIManager.Instance.ClickButtonStart();
-    }
-    public void HandleButtonSettingGame()
-    {
-        Debug.Log("Setting");
-    }
+    
 }

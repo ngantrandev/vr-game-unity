@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class UIManager : MonoSingleton<UIManager>
 {
+    public Transform DialogTransform;
+    public DialogBase StartDialog;
+    public DialogBase SettingDialog;
+    public DialogBase LevelsDialog;
+    public DialogBase _CurrentDialog;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +22,22 @@ public class UIManager : MonoSingleton<UIManager>
     }
     public void ClickButtonStart()
     {
-        Debug.Log("StartGame");
         GameManager.Instance.OnJonGame(GameManager.Instance._CurrentPlayinglevel);
+    }
+    public void ClickButtonSetting()
+    {
+        ShowDialogSetting();
+    }
+    public void ClickButtonListLevel()
+    {
+
+    }
+    public void ShowDialogStartGame()
+    {
+        StartDialog.Show();
+    }
+    public void ShowDialogSetting()
+    {
+        SettingDialog.Show();
     }
 }

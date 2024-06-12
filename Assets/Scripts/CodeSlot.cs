@@ -7,7 +7,7 @@ public class CodeSlot : MonoBehaviour
 {
     public int SlotID;
     public XRSocketInteractor socket;
-
+    public AudioSource Audio;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +21,7 @@ public class CodeSlot : MonoBehaviour
     }
     public void CheckID()
     {
+        Audio.Play();
         IXRSelectInteractable objName = socket.GetOldestInteractableSelected();
         BlockCode b = objName.transform.gameObject.GetComponent<BlockCode>();
         if(b.GetBlockID() == this.SlotID)
