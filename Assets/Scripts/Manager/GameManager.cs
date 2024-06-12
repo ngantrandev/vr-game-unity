@@ -6,7 +6,8 @@ using UnityEngine;
 public class GameManager : MonoSingleton<GameManager>
 {
     private bool GameStart = false;
-    public int NumberScene_PlayGame = 1;
+    public int NumberScene_PlayGame_1 = 1;
+    public int NumberScene_PlayGame_2 = 2;
     public int NumberScene_Home = 0;
     public LevelConfig _CurrentPlayinglevel;
     // Start is called before the first frame update
@@ -46,7 +47,12 @@ public class GameManager : MonoSingleton<GameManager>
     public void OnJonGame(LevelConfig config)
     {
         this._CurrentPlayinglevel = config;
-        UnityEngine.SceneManagement.SceneManager.LoadScene(NumberScene_PlayGame);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(NumberScene_PlayGame_1);
+    }
+    public void StartGameLevel_2(LevelConfig config)
+    {
+        this._CurrentPlayinglevel = config;
+        UnityEngine.SceneManagement.SceneManager.LoadScene(NumberScene_PlayGame_2);
     }
     public void OnHomeScene()
     {

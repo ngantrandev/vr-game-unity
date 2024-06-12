@@ -655,6 +655,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Rig
       objectReference: {fileID: 0}
+    - target: {fileID: 4624822970076067380, guid: ab6504db92806c64c8d1b9a1c95da846,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 6316203905008525215, guid: ab6504db92806c64c8d1b9a1c95da846,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1193,6 +1198,8 @@ MonoBehaviour:
   NumberScene_Home: 0
   _CurrentPlayinglevel:
     _LevelID: 0
+    GatePosition: {x: 0, y: 0, z: 0}
+    QuestionContent: 
     SlotCodes: []
     BlockCodes: []
 --- !u!4 &1349553669

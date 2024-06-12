@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _Level:
   - _LevelID: 0
+    GatePosition: {x: 19.20743, y: -1.39, z: 7.02}
+    QuestionContent: 
     SlotCodes:
     - _BlockID: 0
       Position: {x: 17.651, y: -1.228, z: 8.737}
