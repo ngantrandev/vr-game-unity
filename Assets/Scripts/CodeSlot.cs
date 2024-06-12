@@ -26,12 +26,17 @@ public class CodeSlot : MonoBehaviour
         if(b.GetBlockID() == this.SlotID)
         {
             Debug.Log("Correct");
+            GamePlayManager.Instance.HandleCorrectSlot(this.SlotID);
         }
         else
         {
             Debug.Log("Incorrect");
-        }
-        
+            GamePlayManager.Instance.HanldeInCorrectSlot(this.SlotID);
+        }   
         //Debug.Log(this.SlotID);
+    }
+    public void PlayerGetCode()
+    {
+        GamePlayManager.Instance.HanldeInCorrectSlot(this.SlotID);
     }
 }

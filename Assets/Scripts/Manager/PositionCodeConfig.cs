@@ -31,9 +31,9 @@ public class LevelConfig
 {
     public int _LevelID;
     [Header("Vị trí của codeSlot")]
-    public List<SlotCodeAttribute> SlotCode;
+    public List<SlotCodeAttribute> SlotCodes;
     [Header("Vị trí của BlockCode")]
-    public List<BlockCodeAttribute> BlockCode;
+    public List<BlockCodeAttribute> BlockCodes;
 }
 [System.Serializable]
 public class SlotCodeAttribute

@@ -11,7 +11,7 @@ public class BlockCode : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _Text.text = "Hello";
+        _Text.text = Content!=null?Content:"Null";
     }
 
     // Update is called once per frame
