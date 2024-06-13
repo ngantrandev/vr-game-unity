@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2054106597771592461
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2675841172737352874}
+  - component: {fileID: 141688151346361735}
+  m_Layer: 0
+  m_Name: SceneManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2675841172737352874
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054106597771592461}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.10453986, y: 1.6877282, z: -3.0139623}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &141688151346361735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054106597771592461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14f89e12a07a79a4a8aea321a838a6c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _LevelConfig:
+    _LevelID: 0
+    GatePosition: {x: -4.9, y: -1.35, z: 12.51}
+    QuestionContent: "H\xE3y ho\xE0n th\xE0nh ch\u01B0\u01A1ng tr\xECnh Hello World
+      b\u1EB1ng ng\xF4n ng\u1EEF C++. B\u1EA1n c\u1EA7n \u0111i t\xECm c\xE1c kh\u1ED1i
+      code \u0111\u1EC3 gh\xE9p l\u1EA1i th\xE0nh ch\u01B0\u01A1ng tr\xECnh ho\xE0n
+      ch\u1EC9nh"
+    SlotCodes: []
+    BlockCodes: []
+  Gate: {fileID: 5000668400650562420, guid: 47135e0636eae924bb81941b6a45e279, type: 3}
+  CodeSlot: {fileID: 8429743378740945248, guid: ac1c3dbb2ea0aa942a57dc9f1d7109b0,
+    type: 3}
+  CodeBlock: {fileID: 6647727300257222838, guid: 8ab83d9ade7f73c4ab28f9ec730a06b2,
+    type: 3}
+  CorrectSlot: 
