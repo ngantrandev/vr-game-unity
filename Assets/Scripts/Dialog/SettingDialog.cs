@@ -60,6 +60,7 @@ public class SettingDialog : DialogBase
     }
     public void HandleClickBackDialog()
     {
+        SoundManager.Instance.SoundClickButtonUI();
         UIManager.Instance.ShowDialogStartGame();
     }
 }

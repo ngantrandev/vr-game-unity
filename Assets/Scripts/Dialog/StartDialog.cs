@@ -18,10 +18,12 @@ public class StartDialog : DialogBase
     }
     public void HandleClickStartGame()
     {
+        SoundManager.Instance.SoundClickButtonUI();
         UIManager.Instance.ClickButtonStart();
     }
     public void HandleClickSetting()
     {
+        SoundManager.Instance.SoundClickButtonUI();
         UIManager.Instance.ClickButtonSetting();
     }
     public void HandleClickLevels()
