@@ -612,7 +612,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SoundsMusic:
   - {fileID: 36353535}
-  - {fileID: 0}
   SoundsSFX: []
 --- !u!1 &1156397967
 GameObject:

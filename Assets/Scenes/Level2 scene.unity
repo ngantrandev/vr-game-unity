@@ -13336,6 +13336,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: defbefa94a0bf9d4b92c93f174960404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SoundsMusic:
+  - {fileID: 1380218811}
+  SoundsSFX: []
 --- !u!1001 &1380218810
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13404,6 +13407,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab6504db92806c64c8d1b9a1c95da846, type: 3}
+--- !u!82 &1380218811 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7410657373310991936, guid: ab6504db92806c64c8d1b9a1c95da846,
+    type: 3}
+  m_PrefabInstance: {fileID: 1380218810}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1390822477
 PrefabInstance:
   m_ObjectHideFlags: 0
