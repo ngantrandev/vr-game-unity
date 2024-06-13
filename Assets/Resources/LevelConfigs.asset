@@ -21,13 +21,13 @@ MonoBehaviour:
       ch\u1EC9nh"
     SlotCodes:
     - _BlockID: 3
-      Position: {x: 19, y: -1.228, z: 8}
+      Position: {x: 19, y: -1.45, z: 8}
     - _BlockID: 2
-      Position: {x: 19, y: -1.228, z: 10}
+      Position: {x: 19, y: -1.45, z: 10}
     - _BlockID: 1
-      Position: {x: 19, y: -1.228, z: 12}
+      Position: {x: 19, y: -1.45, z: 12}
     - _BlockID: 0
-      Position: {x: 19, y: -1.228, z: 14}
+      Position: {x: 19, y: -1.45, z: 14}
     BlockCodes:
     - _BlockID: 0
       Position:
@@ -61,25 +61,25 @@ MonoBehaviour:
       s\u1ED1 v\xE0 in ra t\u1ED5ng c\u1EE7a ch\xFAng."
     SlotCodes:
     - _BlockID: 4
-      Position: {x: 52, y: 2.55, z: 276}
+      Position: {x: 52, y: 2.45, z: 276}
     - _BlockID: 3
-      Position: {x: 52, y: 2.55, z: 277}
+      Position: {x: 52, y: 2.45, z: 278}
     - _BlockID: 2
-      Position: {x: 52, y: 2.55, z: 278}
+      Position: {x: 52, y: 2.45, z: 280}
     - _BlockID: 1
-      Position: {x: 52, y: 2.55, z: 279}
+      Position: {x: 52, y: 2.45, z: 282}
     - _BlockID: 0
-      Position: {x: 52, y: 2.55, z: 280}
+      Position: {x: 52, y: 2.45, z: 284}
     BlockCodes:
     - _BlockID: 0
       Position:
-      - {x: 52, y: 10, z: 280}
+      - {x: 52, y: 10, z: 284}
       Content: '#include <iostream>
 
         using namespace std;'
     - _BlockID: 1
       Position:
-      - {x: 52, y: 10, z: 279}
+      - {x: 52, y: 10, z: 282}
       Content: "int main() {\r\n\r\n  int first_number, second_number, sum;"
     - _BlockID: 2
       Position:
@@ -110,33 +110,55 @@ MonoBehaviour:
       2"
     SlotCodes:
     - _BlockID: 0
-      Position: {x: 64.49045, y: 8.68, z: 90}
+      Position: {x: 64.49045, y: 8.03, z: 90}
     - _BlockID: 1
-      Position: {x: 64.49045, y: 8.68, z: 91}
+      Position: {x: 64.49045, y: 8.03, z: 92}
     - _BlockID: 2
-      Position: {x: 64.49045, y: 8.68, z: 92}
+      Position: {x: 64.49045, y: 8.03, z: 94}
+    - _BlockID: 2
+      Position: {x: 64.49045, y: 8.03, z: 96}
+    - _BlockID: 2
+      Position: {x: 64.49045, y: 8.03, z: 98}
+    - _BlockID: 2
+      Position: {x: 64.49045, y: 8.03, z: 100}
     BlockCodes:
     - _BlockID: 0
+      Position:
+      - {x: 64.49045, y: 8.68, z: 100}
+      Content: '#include <bits/stdc++.h>
+
+        using namespace std;'
+    - _BlockID: 1
+      Position:
+      - {x: 64.49045, y: 8.68, z: 98}
+      Content: "int main() {\r\r\n    int a = 10;\r\n    int b = 20;"
+    - _BlockID: 2
       Position:
       - {x: 70, y: 20, z: 72.3}
       - {x: 114.5, y: 20, z: 112.6}
       Content: temp = a;
-    - _BlockID: 1
+    - _BlockID: 3
       Position:
       - {x: 61.1, y: 20, z: 114.2}
       - {x: 106.4, y: 20, z: 63.4}
       Content: a = b;
-    - _BlockID: 2
+    - _BlockID: 4
       Position:
       - {x: 126.1, y: 20, z: 42.6}
       - {x: 48.5, y: 20, z: 43.2}
       Content: b = temp;
+    - _BlockID: 5
+      Position:
+      - {x: 64.49045, y: 8.68, z: 90}
+      Content: 'return 0;
+
+        }'
     - _BlockID: 66
       Position:
       - {x: 126.6, y: 20, z: 83.5}
       - {x: 120.2, y: 20, z: 58.2}
       Content: temp = b;
-    - _BlockID: 55
+    - _BlockID: 77
       Position:
       - {x: 107.6, y: 20, z: 117}
       - {x: 87, y: 20, z: 123.4}
