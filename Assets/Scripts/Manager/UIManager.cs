@@ -31,7 +31,7 @@ public class UIManager : MonoSingleton<UIManager>
     }
     public void ClickButtonListLevel()
     {
-
+        ShowDialogLevels();
     }
     public void ShowDialogStartGame()
     {
@@ -44,5 +44,9 @@ public class UIManager : MonoSingleton<UIManager>
     public void ShowDialogQuestion()
     {
         QuestionDialog.Show();       
+    }
+    public void ShowDialogLevels()
+    {
+        LevelsDialog.Show();
     }
 }

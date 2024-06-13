@@ -974,7 +974,8 @@ MonoBehaviour:
     type: 3}
   SettingDialog: {fileID: 8358686819607728354, guid: 22e74cb4c80f1ec43910d64873b8597e,
     type: 3}
-  LevelsDialog: {fileID: 0}
+  LevelsDialog: {fileID: 4644835361946992559, guid: 749d0541a4c6fa84b897da3160a5a738,
+    type: 3}
   QuestionDialog: {fileID: 7425458290291488384, guid: c3c3bccbab66279419955859af82738b,
     type: 3}
   _CurrentDialog: {fileID: 0}
