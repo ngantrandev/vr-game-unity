@@ -17,9 +17,10 @@ public class CheckColision : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
+        
         if (other.gameObject.tag == "MainCamera")
         {
-            if ((GameManager.Instance._CurrentLevel + 1) < 2)
+            if ((GameManager.Instance._CurrentLevel + 1) <2)
             { 
                 GameManager.Instance.GetConfigLevel(GameManager.Instance._CurrentLevel + 1);
             }

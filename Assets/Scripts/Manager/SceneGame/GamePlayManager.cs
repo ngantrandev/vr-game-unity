@@ -9,10 +9,12 @@ public class GamePlayManager : MonoSingleton<GamePlayManager>
     public GameObject Gate;
     public GameObject CodeSlot;
     public GameObject CodeBlock;
+    public Transform DialogTransform;
     public bool[] CorrectSlot;
     // Start is called before the first frame update
     void Start()
     {
+        UIManager.Instance.DialogTransform = DialogTransform;
         _LevelConfig = GameManager.Instance._CurrentPlayinglevel;
         CorrectSlot = new bool[_LevelConfig.SlotCodes.Count];    
         foreach(SlotCodeAttribute slot in _LevelConfig.SlotCodes)
@@ -28,6 +30,7 @@ public class GamePlayManager : MonoSingleton<GamePlayManager>
                 _CodeBlock.GetComponent<BlockCode>().SetBlockID(block._BlockID);
                 _CodeBlock.GetComponent<BlockCode>().SetContent(block.Content);
             }
+        UIManager.Instance.ShowDialogQuestion();
     }
 
     // Update is called once per frame

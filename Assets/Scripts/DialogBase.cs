@@ -15,7 +15,7 @@ public class DialogBase : MonoBehaviour
     {
         
     }
-    public void Show()
+    virtual public void Show()
     {
         if(UIManager.Instance._CurrentDialog!=null)
             UIManager.Instance._CurrentDialog.close();

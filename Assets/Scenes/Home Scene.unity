@@ -123,6 +123,39 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &36353526 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2230447927607777127, guid: ab6504db92806c64c8d1b9a1c95da846,
+    type: 3}
+  m_PrefabInstance: {fileID: 986025197}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &36353534
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36353526}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &95085995
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -486,6 +519,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7410657373310991936, guid: ab6504db92806c64c8d1b9a1c95da846,
+        type: 3}
+      propertyPath: Mute
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8354113469194776026, guid: ab6504db92806c64c8d1b9a1c95da846,
         type: 3}
       propertyPath: m_InteractionManager
@@ -503,6 +541,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1989040244}
+    - targetCorrespondingSourceObject: {fileID: 2230447927607777127, guid: ab6504db92806c64c8d1b9a1c95da846,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 36353534}
   m_SourcePrefab: {fileID: 100100000, guid: ab6504db92806c64c8d1b9a1c95da846, type: 3}
 --- !u!1 &1063101174
 GameObject:
@@ -514,6 +556,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1063101176}
   - component: {fileID: 1063101175}
+  - component: {fileID: 1063101177}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -549,6 +592,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1063101177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1063101174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: defbefa94a0bf9d4b92c93f174960404, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1156397967
 GameObject:
   m_ObjectHideFlags: 0
@@ -868,7 +923,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NumberScene_PlayGame_1: 1
   NumberScene_PlayGame_2: 2
+  NumberScene_PlayGame_3: 3
   NumberScene_Home: 0
+  _CurrentLevel: 0
   _CurrentPlayinglevel:
     _LevelID: 0
     GatePosition: {x: 0, y: 0, z: 0}
@@ -908,6 +965,8 @@ MonoBehaviour:
   SettingDialog: {fileID: 8358686819607728354, guid: 22e74cb4c80f1ec43910d64873b8597e,
     type: 3}
   LevelsDialog: {fileID: 0}
+  QuestionDialog: {fileID: 7425458290291488384, guid: c3c3bccbab66279419955859af82738b,
+    type: 3}
   _CurrentDialog: {fileID: 0}
 --- !u!114 &1349553671
 MonoBehaviour:

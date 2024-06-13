@@ -8,6 +8,7 @@ public class GameManager : MonoSingleton<GameManager>
     private bool GameStart = false;
     public int NumberScene_PlayGame_1 = 1;
     public int NumberScene_PlayGame_2 = 2;
+    public int NumberScene_PlayGame_3 = 3;
     public int NumberScene_Home = 0;
     public int _CurrentLevel;
     public LevelConfig _CurrentPlayinglevel;
@@ -73,7 +74,7 @@ public class GameManager : MonoSingleton<GameManager>
     }
     public void StartGameLevel_3(LevelConfig config) {
         this._CurrentPlayinglevel = config;
-        UnityEngine.SceneManagement.SceneManager.LoadScene(NumberScene_PlayGame_2);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(NumberScene_PlayGame_3);
     }
     public void OnHomeScene()
     {
