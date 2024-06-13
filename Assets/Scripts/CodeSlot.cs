@@ -21,7 +21,8 @@ public class CodeSlot : MonoBehaviour
     }
     public void CheckID()
     {
-        Audio.Play();
+        if(SoundManager.Instance.SoundSFX)
+            Audio.Play();
         IXRSelectInteractable objName = socket.GetOldestInteractableSelected();
         BlockCode b = objName.transform.gameObject.GetComponent<BlockCode>();
         if(b.GetBlockID() == this.SlotID)

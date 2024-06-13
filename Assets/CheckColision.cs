@@ -4,10 +4,22 @@ using UnityEngine;
 
 public class CheckColision : MonoBehaviour
 {
+    public AudioSource SFX;
+    public AudioSource Music;
     // Start is called before the first frame update
+    private void Awake()
+    {
+        if (SoundManager.Instance.SoundSFX)
+        {
+            SFX.Play();
+        }
+        if (SoundManager.Instance.SoundMusic)
+        {
+            Music.Play();
+        }
+    }
     void Start()
     {
-        
     }
 
     // Update is called once per frame

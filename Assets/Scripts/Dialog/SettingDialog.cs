@@ -11,7 +11,22 @@ public class SettingDialog : DialogBase
     // Start is called before the first frame update
     void Start()
     {
-            
+        if (SoundManager.Instance.SoundMusic)
+        {
+            iconMusic.sprite = sprites[0];
+        }
+        else
+        {
+            iconMusic.sprite = sprites[1];
+        }
+        if (SoundManager.Instance.SoundSFX)
+        {
+            iconSfx.sprite = sprites[0];
+        }
+        else
+        {
+            iconSfx.sprite = sprites[1];
+        }
     }
 
     // Update is called once per frame
