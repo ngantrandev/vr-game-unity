@@ -37,6 +37,10 @@ public class CodeSlot : MonoBehaviour
         }   
         //Debug.Log(this.SlotID);
     }
+    public void ExitBlock()
+    {
+        GamePlayManager.Instance.HanldeInCorrectSlot(this.SlotID);
+    }
     public void PlayerGetCode()
     {
         GamePlayManager.Instance.HanldeInCorrectSlot(this.SlotID);

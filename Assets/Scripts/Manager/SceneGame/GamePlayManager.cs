@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Net.NetworkInformation;
 using UnityEditor;
 using UnityEngine;
 
@@ -11,6 +12,7 @@ public class GamePlayManager : MonoSingleton<GamePlayManager>
     public GameObject CodeBlock;
     public Transform DialogTransform;
     public bool[] CorrectSlot;
+    public GameObject GateOnScene;
     // Start is called before the first frame update
     void Start()
     {
@@ -56,12 +58,16 @@ public class GamePlayManager : MonoSingleton<GamePlayManager>
         if (i == this.CorrectSlot.Length)
         {
             Vector3 GatePosition = GameManager.Instance._CurrentPlayinglevel.GatePosition;
-            Instantiate(this.Gate, GatePosition, Quaternion.identity);
-            Debug.Log("Kết thúc màn chơi");
+            GateOnScene = Instantiate(this.Gate, GatePosition, Quaternion.identity);
+            //Debug.Log("Kết thúc màn chơi");
         }
     }
     public void HanldeInCorrectSlot(int slotid)
     {
         this.CorrectSlot[slotid] = false;
+        if (GateOnScene != null)
+        {
+            Destroy(GateOnScene);
+        }
     }
 }

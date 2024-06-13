@@ -216,7 +216,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8655192636639952257, guid: 2e92cd965be9c1a458c98220387ce333,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655192636639952257, guid: 2e92cd965be9c1a458c98220387ce333,
+        type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655192636639952257, guid: 2e92cd965be9c1a458c98220387ce333,
+        type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8655192636639952257, guid: 2e92cd965be9c1a458c98220387ce333,
@@ -226,13 +236,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8655192636639952257, guid: 2e92cd965be9c1a458c98220387ce333,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5891259231167211833}
+    - target: {fileID: 8655192636639952257, guid: 2e92cd965be9c1a458c98220387ce333,
+        type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 5891259231167211833}
     - target: {fileID: 8655192636639952257, guid: 2e92cd965be9c1a458c98220387ce333,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655192636639952257, guid: 2e92cd965be9c1a458c98220387ce333,
+        type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655192636639952257, guid: 2e92cd965be9c1a458c98220387ce333,
+        type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ExitBlock
       objectReference: {fileID: 0}
     - target: {fileID: 8655192636639952257, guid: 2e92cd965be9c1a458c98220387ce333,
         type: 3}
@@ -241,8 +266,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8655192636639952257, guid: 2e92cd965be9c1a458c98220387ce333,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CodeSlot, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655192636639952257, guid: 2e92cd965be9c1a458c98220387ce333,
+        type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: CodeSlot, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655192636639952257, guid: 2e92cd965be9c1a458c98220387ce333,
+        type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8655192636639952257, guid: 2e92cd965be9c1a458c98220387ce333,
         type: 3}

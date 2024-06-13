@@ -223,6 +223,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2109335114}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &22096278 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7410657373310991936, guid: ab6504db92806c64c8d1b9a1c95da846,
+    type: 3}
+  m_PrefabInstance: {fileID: 2663303605989127676}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &24874922 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3434643013334542547, guid: ba41cc3523f70d94981ec452dc307e61,
@@ -15048,6 +15054,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: defbefa94a0bf9d4b92c93f174960404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SoundsMusic:
+  - {fileID: 22096278}
+  SoundsSFX: []
 --- !u!1001 &1478143964173815783
 PrefabInstance:
   m_ObjectHideFlags: 0
