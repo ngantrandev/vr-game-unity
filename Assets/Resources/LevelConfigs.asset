@@ -109,17 +109,17 @@ MonoBehaviour:
       hai s\u1ED1 cho tr\u01B0\u1EDBc.\nV\xED d\u1EE5: a = 2, b = 3 => a = 3, b =
       2"
     SlotCodes:
-    - _BlockID: 0
+    - _BlockID: 5
       Position: {x: 64.49045, y: 8.03, z: 90}
-    - _BlockID: 1
+    - _BlockID: 4
       Position: {x: 64.49045, y: 8.03, z: 92}
-    - _BlockID: 2
+    - _BlockID: 3
       Position: {x: 64.49045, y: 8.03, z: 94}
     - _BlockID: 2
       Position: {x: 64.49045, y: 8.03, z: 96}
-    - _BlockID: 2
+    - _BlockID: 1
       Position: {x: 64.49045, y: 8.03, z: 98}
-    - _BlockID: 2
+    - _BlockID: 0
       Position: {x: 64.49045, y: 8.03, z: 100}
     BlockCodes:
     - _BlockID: 0
