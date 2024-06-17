@@ -1092,6 +1092,125 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1001 &1547048483
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 7d127ff931c6d3d4ba87ccdfb151d31a,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 16.17
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d127ff931c6d3d4ba87ccdfb151d31a,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 16.17
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d127ff931c6d3d4ba87ccdfb151d31a,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 16.17
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d127ff931c6d3d4ba87ccdfb151d31a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.69
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d127ff931c6d3d4ba87ccdfb151d31a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.214
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d127ff931c6d3d4ba87ccdfb151d31a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.32
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d127ff931c6d3d4ba87ccdfb151d31a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d127ff931c6d3d4ba87ccdfb151d31a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d127ff931c6d3d4ba87ccdfb151d31a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d127ff931c6d3d4ba87ccdfb151d31a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d127ff931c6d3d4ba87ccdfb151d31a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d127ff931c6d3d4ba87ccdfb151d31a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d127ff931c6d3d4ba87ccdfb151d31a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d127ff931c6d3d4ba87ccdfb151d31a,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7d127ff931c6d3d4ba87ccdfb151d31a,
+        type: 3}
+      propertyPath: m_Name
+      value: Standing React Large From Front
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7d127ff931c6d3d4ba87ccdfb151d31a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1547048485}
+  m_SourcePrefab: {fileID: 100100000, guid: 7d127ff931c6d3d4ba87ccdfb151d31a, type: 3}
+--- !u!1 &1547048484 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7d127ff931c6d3d4ba87ccdfb151d31a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1547048483}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1547048485
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547048484}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.05, y: 0.08, z: 0.05}
+  m_Center: {x: 0, y: 0.04, z: 0}
 --- !u!1 &1570756542
 GameObject:
   m_ObjectHideFlags: 0
@@ -1322,3 +1441,4 @@ SceneRoots:
   - {fileID: 1184032690}
   - {fileID: 420041298}
   - {fileID: 1570756545}
+  - {fileID: 1547048483}

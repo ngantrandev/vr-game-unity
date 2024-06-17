@@ -974,8 +974,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1456743317152601944}
   m_HandleRect: {fileID: 5436514527925460797}
   m_Direction: 2
-  m_Value: 1.1113472
-  m_Size: 0.7905
+  m_Value: 1.0000077
+  m_Size: 0.78695834
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1239,7 +1239,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &2719308169466818281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1247,12 +1247,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8257279617992146591}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
+  m_IgnoreReversedGraphics: 0
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
