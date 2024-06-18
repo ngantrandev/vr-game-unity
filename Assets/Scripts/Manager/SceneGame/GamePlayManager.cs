@@ -84,4 +84,8 @@ public class GamePlayManager : MonoSingleton<GamePlayManager>
     {
         Demon.PlayActionAttack();
     }
+    public void HandleWinGameQuiz()
+    {
+        Demon.PlayActionDeath();
+    }
 }

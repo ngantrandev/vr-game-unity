@@ -11,16 +11,22 @@ public class QuizDialog : DialogBase
     public TextMeshProUGUI QuestionText;
     public GameObject Container;
     public GameObject ItemQuiz_Prefab;
+    public Image UIHealthPlayer;
     public int idQuiz;
     public float TimeoutSet = 10;
     float Timeout;
     public RectTransform Display;
     Vector2 CurrentSizeTime;
+    Vector2 CurrentUIHealthPlayer;
     // Start is called before the first frame update
     void Start()
     {
+        base.checkAudio();
         Timeout = TimeoutSet;
         CurrentSizeTime = Display.sizeDelta;
+        UIHealthPlayer.rectTransform.sizeDelta = CurrentUIHealthPlayer;
+        UpdateHP();
+        GetQuizAndSetup();
     }
 
     // Update is called once per frame
@@ -35,11 +41,15 @@ public class QuizDialog : DialogBase
             GetQuizAndSetup();
         }
     }
+    public void UpdateHP()
+    {
+        UIHealthPlayer.rectTransform.sizeDelta = new Vector2 (CurrentUIHealthPlayer.x,(GameManager.Instance.CountQuizEndgame/2-GameManager.Instance.CountIncorrectQuiz)*100/(GameManager.Instance.CountQuizEndgame/2));
+    }
     void changetime(float currenttime)
     {
         currenttime += 1;
         float secound = Mathf.FloorToInt(currenttime);
-        Debug.Log(secound);
+        //Debug.Log(secound);
         Display.sizeDelta = new Vector2((currenttime * CurrentSizeTime.x / TimeoutSet), CurrentSizeTime.y);
     }
     public void GetQuizAndSetup()
@@ -56,7 +66,7 @@ public class QuizDialog : DialogBase
         QuizQuestion _quiz = GameManager.Instance.RandomQuizQuestion().Item2;
         idQuiz = GameManager.Instance.RandomQuizQuestion().Item1;
         Question = _quiz.Question;
-        Debug.Log(Question);
+        //Debug.Log(Question);
         QuestionText.text = Question;
         GameObject itemA = Instantiate(ItemQuiz_Prefab, UIManager.Instance._CurrentDialog.GetComponent<QuizDialog>().Container.transform);
         itemA.GetComponent<ItemQuiz>().Setcontent(_quiz.AnswerA);
@@ -94,7 +104,6 @@ public class QuizDialog : DialogBase
     public override void Show()
     {
         base.Show();
-        GetQuizAndSetup();
     }
     public void ClearGameObject()
     {

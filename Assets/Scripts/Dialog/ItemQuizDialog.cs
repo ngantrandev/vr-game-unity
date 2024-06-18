@@ -35,9 +35,13 @@ public class ItemQuiz : MonoBehaviour
         }
         else
         {
-            Debug.Log("Sai");
-            GameManager.Instance.IncorrectAnswser();
-            //Trả lời sai
+            if (Toggle.isOn)
+            {
+                Debug.Log("Sai");
+                GameManager.Instance.IncorrectAnswser();
+                Toggle.isOn = false;
+            }
+                //Trả lời sai
         }
     }
     public void Setcontent(string text)

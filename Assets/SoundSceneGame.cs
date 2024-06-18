@@ -10,6 +10,7 @@ public class SoundSceneGame : MonoSingleton<SoundSceneGame>
     void Start()
     {
         SoundManager.Instance.SoundScene = this;
+        CheckStatus();
     }
 
     // Update is called once per frame
@@ -46,6 +47,38 @@ public class SoundSceneGame : MonoSingleton<SoundSceneGame>
         else
         {
             foreach( AudioSource source in SoundsSFX)
+            {
+                source.mute = true;
+            }
+        }
+    }
+    public void CheckStatus()
+    {
+        if (SoundManager.Instance.SoundMusic)
+        {
+            foreach (AudioSource source in SoundsMusic)
+            {
+                source.mute = false;
+            }
+        }
+        else
+        {
+            foreach (AudioSource source in SoundsMusic)
+            {
+                source.mute = true;
+            }
+        }
+        if (SoundManager.Instance.SoundSFX)
+        {
+            foreach (AudioSource source in SoundsSFX)
+            {
+
+                source.mute = false;
+            }
+        }
+        else
+        {
+            foreach (AudioSource source in SoundsSFX)
             {
                 source.mute = true;
             }

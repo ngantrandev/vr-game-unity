@@ -5,27 +5,24 @@ using UnityEngine.UI;
 
 public class SettingDialog : DialogBase
 {
-    public Sprite[] sprites;
-    public Image iconMusic;
-    public Image iconSfx;
     // Start is called before the first frame update
     void Start()
     {
         if (SoundManager.Instance.SoundMusic)
         {
-            iconMusic.sprite = sprites[0];
+            iconMusic.sprite = UIManager.Instance.sprites[3];
         }
         else
         {
-            iconMusic.sprite = sprites[1];
+            iconMusic.sprite = UIManager.Instance.sprites[2];
         }
         if (SoundManager.Instance.SoundSFX)
         {
-            iconSfx.sprite = sprites[0];
+            iconSfx.sprite = UIManager.Instance.sprites[1];
         }
         else
         {
-            iconSfx.sprite = sprites[1];
+            iconSfx.sprite = UIManager.Instance.sprites[0];
         }
     }
 
@@ -33,30 +30,6 @@ public class SettingDialog : DialogBase
     void Update()
     {
         
-    }
-    public void HandleClickMusic()
-    {
-        bool statusMusic = SoundManager.Instance.ChangeStatusMusic();
-        if (statusMusic)
-        {
-            iconMusic.sprite= sprites[0];
-        }
-        else
-        {
-            iconMusic.sprite = sprites[1];
-        }
-    }
-    public void HandleClickSfx()
-    {
-        bool StatusSfx = SoundManager.Instance.ChangeStatusSoundSFX();
-        if (StatusSfx)
-        {
-            iconSfx.sprite = sprites[0];
-        }
-        else
-        {
-            iconSfx.sprite = sprites[1];
-        }
     }
     public void HandleClickBackDialog()
     {

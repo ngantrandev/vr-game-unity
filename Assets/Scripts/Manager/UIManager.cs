@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class UIManager : MonoSingleton<UIManager>
 {
+    [SerializeField]
+    public Sprite[] sprites;
     public Transform DialogTransform;
     public DialogBase StartDialog;
     public DialogBase SettingDialog;

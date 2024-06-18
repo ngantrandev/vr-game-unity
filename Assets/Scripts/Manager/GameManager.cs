@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Experimental.Rendering;
+using UnityEngine.InputSystem.iOS;
 
 public class GameManager : MonoSingleton<GameManager>
 {
@@ -15,14 +17,18 @@ public class GameManager : MonoSingleton<GameManager>
     public LevelConfig _CurrentPlayinglevel;
     public QuizConfig _CurrentQuizConfig;
     public List<QuizQuestion> _QuizList;
+    public int CountQuizEndgame = 10;
+    public int CountIncorrectQuiz = 0;
+    public int CountCorrectQuiz = 0;
     // Start is called before the first frame update
     private void Awake()
     {
-        _CurrentLevel = 3;
+        _CurrentLevel = 0;
         _CurrentPlayinglevel = GameManager.Instance.GetResourceFile<LevelConfigs>("LevelConfigs").GetConfig()[_CurrentLevel];
     }
     void Start()
     {
+        OnHomeScene();
     }
 
     // Update is called once per frame
@@ -89,6 +95,8 @@ public class GameManager : MonoSingleton<GameManager>
     {
         this._CurrentPlayinglevel = config;
         UnityEngine.SceneManagement.SceneManager.LoadScene(NumberScene_PlayGame_4);
+        CountIncorrectQuiz = 0;
+        CountCorrectQuiz = 0;
     }
     public void OnHomeScene()
     {
@@ -108,11 +116,22 @@ public class GameManager : MonoSingleton<GameManager>
     {
         GamePlayManager.Instance.HandleQuizCorrectAnswer();
         UIManager.Instance._CurrentDialog.GetComponent<QuizDialog>().GetQuizAndSetup();
+        CountCorrectQuiz++;
+        if (CountCorrectQuiz == CountQuizEndgame)
+        {
+            UIManager.Instance._CurrentDialog.close();
+            GamePlayManager.Instance.HandleWinGameQuiz();
+        }
 
     }
     public void IncorrectAnswser()
     {
         GamePlayManager.Instance.HandleQuizInCorrectAnswer();
+        CountIncorrectQuiz+=1;
         //UIManager.Instance._CurrentDialog.GetComponent<QuizDialog>().GetQuizAndSetup();
+        //if (CountIncorrectQuiz >= CountQuizEndgame/2)
+        //{
+        //    OnHomeScene();
+        //}
     }
 }

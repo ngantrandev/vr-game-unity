@@ -1,0 +1,226 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &991401125773257843
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1748633399404361396}
+  - component: {fileID: 8786314654512920922}
+  - component: {fileID: 6977286282262008464}
+  - component: {fileID: 979369913122702526}
+  - component: {fileID: 9048853935016729542}
+  - component: {fileID: 3705620579308005167}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1748633399404361396
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991401125773257843}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.65984976, y: 1.8476099, z: -0.52970105}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8786314654512920922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991401125773257843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0f7bca66a7c5af4e91df47bdebe6f80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NumberScene_PlayGame_1: 1
+  NumberScene_PlayGame_2: 2
+  NumberScene_PlayGame_3: 3
+  NumberScene_PlayGame_4: 4
+  NumberScene_Home: 0
+  _CurrentLevel: 0
+  _CurrentPlayinglevel:
+    _LevelID: 0
+    GatePosition: {x: 0, y: 0, z: 0}
+    Quiz: 0
+    QuestionContent: 
+    SlotCodes: []
+    BlockCodes: []
+  _CurrentQuizConfig:
+    _IDQuiz: 0
+    TransformPositionInMap: {fileID: 0}
+    GatePosition: {x: 0, y: 0, z: 0}
+    QuizTitle: 
+    QuizItems: []
+  CountQuizEndgame: 10
+  CountIncorrectQuiz: 0
+  CountCorrectQuiz: 0
+--- !u!114 &6977286282262008464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991401125773257843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25c7776deb42b804cbd7db8f0a9e675e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &979369913122702526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991401125773257843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d12d95a49bd7694095a89b85b45a48c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: ec9290f45f4b559408ec69426e578fad, type: 3}
+  - {fileID: 21300000, guid: 5ba23fb83cd33234d95091e4ad613010, type: 3}
+  - {fileID: 21300000, guid: 64950915e0186f74ab8d2b26fd0fde59, type: 3}
+  - {fileID: 21300000, guid: ee4e7fe26d0e6344884c8e5fabbdebd4, type: 3}
+  DialogTransform: {fileID: 0}
+  StartDialog: {fileID: 803853070923843996, guid: 87547713ea899454584b7b60faca26e8,
+    type: 3}
+  SettingDialog: {fileID: 8358686819607728354, guid: 22e74cb4c80f1ec43910d64873b8597e,
+    type: 3}
+  LevelsDialog: {fileID: 4644835361946992559, guid: 749d0541a4c6fa84b897da3160a5a738,
+    type: 3}
+  QuestionDialog: {fileID: 7425458290291488384, guid: c3c3bccbab66279419955859af82738b,
+    type: 3}
+  QuizDialog: {fileID: 1320346453301811328, guid: 5f0d1bc5d81293c42acb111fb620d711,
+    type: 3}
+  _CurrentDialog: {fileID: 0}
+--- !u!114 &9048853935016729542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991401125773257843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a230248fbccf4844b874bf5101edd3ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SoundSFX: 1
+  SoundMusic: 1
+  SoundScene: {fileID: 0}
+  SoundClickButton: {fileID: 8300000, guid: f0dff4da8e4204fe9b98afb911292ef2, type: 3}
+  SFXUI: {fileID: 3705620579308005167}
+--- !u!82 &3705620579308005167
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991401125773257843}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 100
+  DopplerLevel: 2.05
+  MinDistance: 3.89
+  MaxDistance: 267.4
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.5
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4

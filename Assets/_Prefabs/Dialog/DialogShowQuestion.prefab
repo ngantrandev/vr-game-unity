@@ -974,8 +974,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1456743317152601944}
   m_HandleRect: {fileID: 5436514527925460797}
   m_Direction: 2
-  m_Value: 1.0000077
-  m_Size: 0.78695834
+  m_Value: 1.0003963
+  m_Size: 0.7671677
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1239,7 +1239,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &2719308169466818281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1288,14 +1288,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28ca6373962fbd4ca9a4d97f6af5594, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Content: {fileID: 2010421784064346904}
-  sprites:
-  - {fileID: 21300000, guid: ec9290f45f4b559408ec69426e578fad, type: 3}
-  - {fileID: 21300000, guid: 5ba23fb83cd33234d95091e4ad613010, type: 3}
-  - {fileID: 21300000, guid: 64950915e0186f74ab8d2b26fd0fde59, type: 3}
-  - {fileID: 21300000, guid: ee4e7fe26d0e6344884c8e5fabbdebd4, type: 3}
   iconSfx: {fileID: 3057694001722056453}
   iconMusic: {fileID: 2153554512071315550}
+  Content: {fileID: 2010421784064346904}
 --- !u!1 &8866812199562418027
 GameObject:
   m_ObjectHideFlags: 0
