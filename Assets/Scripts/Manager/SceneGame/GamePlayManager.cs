@@ -13,6 +13,7 @@ public class GamePlayManager : MonoSingleton<GamePlayManager>
     public Transform DialogTransform;
     public bool[] CorrectSlot;
     public GameObject GateOnScene;
+    public Enermy Demon;
     // Start is called before the first frame update
     void Start()
     {
@@ -74,5 +75,13 @@ public class GamePlayManager : MonoSingleton<GamePlayManager>
         {
             Destroy(GateOnScene);
         }
+    }
+    public void HandleQuizCorrectAnswer()
+    {
+        Demon.PlayActionHit();
+    }
+    public void HandleQuizInCorrectAnswer()
+    {
+        Demon.PlayActionAttack();
     }
 }

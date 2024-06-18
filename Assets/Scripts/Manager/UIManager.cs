@@ -9,7 +9,7 @@ public class UIManager : MonoSingleton<UIManager>
     public DialogBase SettingDialog;
     public DialogBase LevelsDialog;
     public QuestionDialog QuestionDialog;
-    public QuizDialog QuizDialog;
+    public DialogBase QuizDialog;
     public DialogBase _CurrentDialog;
     // Start is called before the first frame update
     void Start()
@@ -52,7 +52,7 @@ public class UIManager : MonoSingleton<UIManager>
     }
     public void ShowDialogQuiz()
     {
-
+        GameManager.Instance.ReadFileExam();
         QuizDialog.Show();
     }
 }

@@ -14,10 +14,11 @@ public class GameManager : MonoSingleton<GameManager>
     public int _CurrentLevel;
     public LevelConfig _CurrentPlayinglevel;
     public QuizConfig _CurrentQuizConfig;
+    public List<QuizQuestion> _QuizList;
     // Start is called before the first frame update
     private void Awake()
     {
-        _CurrentLevel = 0;
+        _CurrentLevel = 3;
         _CurrentPlayinglevel = GameManager.Instance.GetResourceFile<LevelConfigs>("LevelConfigs").GetConfig()[_CurrentLevel];
     }
     void Start()
@@ -92,5 +93,26 @@ public class GameManager : MonoSingleton<GameManager>
     public void OnHomeScene()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(NumberScene_Home);
+    }
+    public void ReadFileExam()
+    {
+        _QuizList = QuizReader.ReadQuizFromFile();
+    }
+    public (int,QuizQuestion) RandomQuizQuestion()
+    {
+        int idquestion = Random.Range(0, _QuizList.Count);
+        QuizQuestion Q = _QuizList[idquestion];
+        return (idquestion,Q);
+    }
+    public void CorrectAnswer()
+    {
+        GamePlayManager.Instance.HandleQuizCorrectAnswer();
+        UIManager.Instance._CurrentDialog.GetComponent<QuizDialog>().GetQuizAndSetup();
+
+    }
+    public void IncorrectAnswser()
+    {
+        GamePlayManager.Instance.HandleQuizInCorrectAnswer();
+        //UIManager.Instance._CurrentDialog.GetComponent<QuizDialog>().GetQuizAndSetup();
     }
 }

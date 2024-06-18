@@ -1,0 +1,126 @@
+Q: Từ khóa nào được sử dụng để định nghĩa một lớp trong C#?
+class
+struct
+interface
+enum
+A
+Q: Cú pháp nào sau đây là đúng để tạo một đối tượng của một lớp trong C#?
+ClassName obj = new ClassName();
+ClassName obj = new ClassName;
+ClassName obj();
+new ClassName obj;
+A
+Q: Bộ sửa truy cập mặc định cho các thành viên của một lớp trong C# là gì?
+private
+public
+protected
+internal
+A
+Q: Từ khóa nào được sử dụng để kế thừa một lớp trong C#?
+extends
+implements
+inherits
+:
+D
+Q: Cách nào sau đây là đúng để khai báo một phương thức trong C#?
+public void MyMethod()
+public void MyMethod;
+public void MyMethod[]
+void MyMethod public()
+A
+Q: Kích thước của kiểu dữ liệu int trong C# là bao nhiêu?
+2 bytes
+4 bytes
+8 bytes
+16 bytes
+B
+Q: Làm thế nào để chuyển đổi kiểu double sang int trong C#?
+(int)doubleValue
+doubleValue.toInt()
+Convert.toInt(doubleValue)
+(int)doubleValue;
+A
+Q: Cấu trúc nào được sử dụng để xử lý ngoại lệ trong C#?
+try-catch
+try-catch-finally
+try-finally
+Cả ba đều đúng
+D
+Q: Kết quả của Console.WriteLine(5 / 2); trong C# là gì?
+2
+2.5
+2.0
+Không có câu nào đúng
+A
+Q: Từ khóa nào được sử dụng để tham chiếu đến thể hiện hiện tại của một lớp trong C#?
+self
+this
+current
+instance
+B
+Q: Mục đích của chỉ thị 'using' trong C# là gì?
+Để bao gồm các không gian tên
+Để tạo một bí danh
+Để nhập các lớp
+Tất cả các câu trên
+D
+Q: Làm thế nào để bình luận một dòng đơn trong C#?
+#
+//
+<!-- -->
+'''
+B
+Q: Điểm bắt đầu của một ứng dụng console C# là gì?
+Phương thức Main
+Phương thức Start
+Phương thức Init
+Phương thức Entry
+A
+Q: Kiểu dữ liệu nào sau đây không tồn tại trong C#?
+int
+float
+double
+real
+D
+Q: Làm thế nào để khai báo một hằng số trong C#?
+const int x = 10;
+readonly int x = 10;
+final int x = 10;
+immutable int x = 10;
+A
+Q: Từ khóa nào được sử dụng để ngăn chặn việc kế thừa một lớp trong C#?
+sealed
+static
+final
+private
+A
+Q: Kiểu dữ liệu nào có thể lưu trữ giá trị true hoặc false trong C#?
+bool
+int
+float
+char
+A
+Q: Từ khóa nào được sử dụng để khai báo một giao diện trong C#?
+interface
+struct
+class
+enum
+A
+Q: Trong C#, phương thức nào được gọi là phương thức khởi tạo?
+constructor
+initializer
+creator
+builder
+A
+Q: Từ khóa nào được sử dụng để xóa một đối tượng trong bộ nhớ trong C#?
+delete
+remove
+free
+Không có từ khóa nào
+D
+Q: Từ khóa nào được sử dụng để định nghĩa một phương thức trừu tượng trong C#?
+abstract
+virtual
+override
+new
+A

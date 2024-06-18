@@ -9,11 +9,12 @@ public class ItemQuiz : MonoBehaviour
     public Text labelItem;
     public Toggle Toggle;
     public string Content;
-    public int id;
+    public bool CorrectAnswer = false;
     public bool ison;
     // Start is called before the first frame update
     void Start()
     {
+        this.GetComponent<Toggle>().group = this.gameObject.transform.parent.GetComponent<ToggleGroup>();
         Toggle = this.GetComponent<Toggle>();
         labelItem.text = Content;
     }
@@ -25,14 +26,27 @@ public class ItemQuiz : MonoBehaviour
     }
     public void clickitem()
     {
-        if (this.id == UIManager.Instance.GetComponent<QuizDialog>().idQuiz)
+        if (this.CorrectAnswer && Toggle.isOn)
         {
             //UIManager.Instance.GetComponent<QuizDialog>().GetQuizAndSetup();
             //Trả lời đúng
+            Debug.Log("Đúng");
+            GameManager.Instance.CorrectAnswer();
         }
         else
         {
+            Debug.Log("Sai");
+            GameManager.Instance.IncorrectAnswser();
             //Trả lời sai
         }
+    }
+    public void Setcontent(string text)
+    {
+        Content = text;
+        labelItem.text = Content;
+    }
+    public void SetCorrectAnswer(bool Status)
+    {
+        CorrectAnswer = Status;
     }
 }
