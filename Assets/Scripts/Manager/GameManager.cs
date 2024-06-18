@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Experimental.Rendering;
-using UnityEngine.InputSystem.iOS;
+//using UnityEngine.InputSystem.iOS;
 
 public class GameManager : MonoSingleton<GameManager>
 {
     private bool GameStart = false;
-    public int NumberScene_PlayGame_1 = 1;
-    public int NumberScene_PlayGame_2 = 2;
-    public int NumberScene_PlayGame_3 = 3;
-    public int NumberScene_PlayGame_4 = 4;
-    public int NumberScene_Home = 0;
+    public int NumberScene_PlayGame_1 = 2;
+    public int NumberScene_PlayGame_2 = 3;
+    public int NumberScene_PlayGame_3 = 4;
+    public int NumberScene_PlayGame_4 = 5;
+    public int NumberScene_Home = 1;
     public int _CurrentLevel;
     public LevelConfig _CurrentPlayinglevel;
     public QuizConfig _CurrentQuizConfig;
