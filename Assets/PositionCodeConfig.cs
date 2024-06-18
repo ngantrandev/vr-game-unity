@@ -31,6 +31,7 @@ public class LevelConfig
 {
     public int _LevelID;
     public Vector3 GatePosition;
+    public bool Quiz;
     [Header("Câu hỏi trong Level")]
     [TextAreaAttribute]
     public string QuestionContent;

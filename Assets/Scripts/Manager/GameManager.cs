@@ -9,9 +9,11 @@ public class GameManager : MonoSingleton<GameManager>
     public int NumberScene_PlayGame_1 = 1;
     public int NumberScene_PlayGame_2 = 2;
     public int NumberScene_PlayGame_3 = 3;
+    public int NumberScene_PlayGame_4 = 4;
     public int NumberScene_Home = 0;
     public int _CurrentLevel;
     public LevelConfig _CurrentPlayinglevel;
+    public QuizConfig _CurrentQuizConfig;
     // Start is called before the first frame update
     private void Awake()
     {
@@ -50,6 +52,9 @@ public class GameManager : MonoSingleton<GameManager>
     {
         _CurrentLevel = level;
         _CurrentPlayinglevel = GameManager.Instance.GetResourceFile<LevelConfigs>("LevelConfigs").GetConfig()[_CurrentLevel];
+        if (_CurrentPlayinglevel.Quiz) {
+            _CurrentQuizConfig = GameManager.Instance.GetResourceFile<QuizConfigs>("QuizConfigs").GetConfig()[0];
+        }
         if( _CurrentLevel == 0)
         {
             this.OnJonGame(_CurrentPlayinglevel);
@@ -59,6 +64,9 @@ public class GameManager : MonoSingleton<GameManager>
         }
         if (_CurrentLevel == 2) { 
             this.StartGameLevel_3(_CurrentPlayinglevel);
+        }
+        if(_CurrentLevel == 3) {
+            this.StartGameLevel_4((_CurrentPlayinglevel));
         }
     }
     // Mở Level Màn chơi
@@ -75,6 +83,11 @@ public class GameManager : MonoSingleton<GameManager>
     public void StartGameLevel_3(LevelConfig config) {
         this._CurrentPlayinglevel = config;
         UnityEngine.SceneManagement.SceneManager.LoadScene(NumberScene_PlayGame_3);
+    }
+    public void StartGameLevel_4(LevelConfig config)
+    {
+        this._CurrentPlayinglevel = config;
+        UnityEngine.SceneManagement.SceneManager.LoadScene(NumberScene_PlayGame_4);
     }
     public void OnHomeScene()
     {

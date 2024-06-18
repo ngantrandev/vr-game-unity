@@ -18,6 +18,7 @@ public class GamePlayManager : MonoSingleton<GamePlayManager>
     {
         UIManager.Instance.DialogTransform = DialogTransform;
         _LevelConfig = GameManager.Instance._CurrentPlayinglevel;
+        if (!_LevelConfig.Quiz) { 
         CorrectSlot = new bool[_LevelConfig.SlotCodes.Count];    
         foreach(SlotCodeAttribute slot in _LevelConfig.SlotCodes)
             {
@@ -33,6 +34,10 @@ public class GamePlayManager : MonoSingleton<GamePlayManager>
                 _CodeBlock.GetComponent<BlockCode>().SetContent(block.Content);
             }
         UIManager.Instance.ShowDialogQuestion();
+        }
+        if (_LevelConfig.Quiz) {
+            UIManager.Instance.ShowDialogQuiz();
+        }
     }
 
     // Update is called once per frame

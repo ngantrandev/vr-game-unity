@@ -12,4 +12,163 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a6a26534bb340f499b1eaedcfaca0cc, type: 3}
   m_Name: LevelConfigs
   m_EditorClassIdentifier: 
-  _Level: []
+  _Level:
+  - _LevelID: 0
+    GatePosition: {x: -5, y: -1.39, z: 7.02}
+    Quiz: 0
+    QuestionContent: "H\xE3y ho\xE0n th\xE0nh ch\u01B0\u01A1ng tr\xECnh Hello World
+      b\u1EB1ng ng\xF4n ng\u1EEF C++. B\u1EA1n c\u1EA7n \u0111i t\xECm c\xE1c kh\u1ED1i
+      code \u0111\u1EC3 gh\xE9p l\u1EA1i th\xE0nh ch\u01B0\u01A1ng tr\xECnh ho\xE0n
+      ch\u1EC9nh"
+    SlotCodes:
+    - _BlockID: 3
+      Position: {x: 19, y: -1.45, z: 8}
+    - _BlockID: 2
+      Position: {x: 19, y: -1.45, z: 10}
+    - _BlockID: 1
+      Position: {x: 19, y: -1.45, z: 12}
+    - _BlockID: 0
+      Position: {x: 19, y: -1.45, z: 14}
+    BlockCodes:
+    - _BlockID: 0
+      Position:
+      - {x: 10.69, y: -1, z: 43.42}
+      - {x: -30, y: -1, z: 30}
+      - {x: -38, y: -1, z: -4.1}
+      Content: '#include <iostream>
+
+
+
+        using namespace std;'
+    - _BlockID: 1
+      Position:
+      - {x: 19, y: -1, z: 12}
+      Content: int main() {
+    - _BlockID: 2
+      Position:
+      - {x: 2.1, y: -1, z: -42}
+      - {x: 52, y: -1, z: 25}
+      - {x: 34, y: -1, z: -33}
+      Content: "cout << \"Hello World !\\n\";\r"
+    - _BlockID: 3
+      Position:
+      - {x: 19, y: -1, z: 8}
+      Content: '    return 0;
+
+        }'
+  - _LevelID: 1
+    GatePosition: {x: 84, y: 3, z: 298}
+    Quiz: 0
+    QuestionContent: "Vi\u1EBFt ch\u01B0\u01A1ng tr\xECnh C++ nh\u1EADp v\xE0o hai
+      s\u1ED1 v\xE0 in ra t\u1ED5ng c\u1EE7a ch\xFAng."
+    SlotCodes:
+    - _BlockID: 4
+      Position: {x: 52, y: 2.45, z: 276}
+    - _BlockID: 3
+      Position: {x: 52, y: 2.45, z: 278}
+    - _BlockID: 2
+      Position: {x: 52, y: 2.45, z: 280}
+    - _BlockID: 1
+      Position: {x: 52, y: 2.45, z: 282}
+    - _BlockID: 0
+      Position: {x: 52, y: 2.45, z: 284}
+    BlockCodes:
+    - _BlockID: 0
+      Position:
+      - {x: 52, y: 10, z: 284}
+      Content: '#include <iostream>
+
+        using namespace std;'
+    - _BlockID: 1
+      Position:
+      - {x: 52, y: 10, z: 282}
+      Content: "int main() {\r\n\r\n  int first_number, second_number, sum;"
+    - _BlockID: 2
+      Position:
+      - {x: 116, y: 10, z: 290}
+      - {x: 85, y: 10, z: 306}
+      - {x: 43, y: 10, z: 306}
+      Content: "cin >> first_number >> second_number;\r"
+    - _BlockID: 3
+      Position:
+      - {x: 57, y: 5.5, z: 294}
+      - {x: 64, y: 5.5, z: 253}
+      - {x: 53, y: 5.5, z: 264}
+      Content: cout << first_number + second_number;
+    - _BlockID: 4
+      Position:
+      - {x: 52, y: 6, z: 276}
+      Content: '  return 0;
+
+        }'
+    - _BlockID: 89
+      Position:
+      - {x: 42, y: 6, z: 270}
+      Content: input(first_number)
+  - _LevelID: 2
+    GatePosition: {x: 108, y: 7.62, z: 104}
+    Quiz: 0
+    QuestionContent: "Vi\u1EBFt ch\u01B0\u01A1ng tr\xECnh C++ \u0111\u1ED5i ch\u1ED7
+      hai s\u1ED1 cho tr\u01B0\u1EDBc.\nV\xED d\u1EE5: a = 2, b = 3 => a = 3, b =
+      2"
+    SlotCodes:
+    - _BlockID: 5
+      Position: {x: 64.49045, y: 8.03, z: 90}
+    - _BlockID: 4
+      Position: {x: 64.49045, y: 8.03, z: 92}
+    - _BlockID: 3
+      Position: {x: 64.49045, y: 8.03, z: 94}
+    - _BlockID: 2
+      Position: {x: 64.49045, y: 8.03, z: 96}
+    - _BlockID: 1
+      Position: {x: 64.49045, y: 8.03, z: 98}
+    - _BlockID: 0
+      Position: {x: 64.49045, y: 8.03, z: 100}
+    BlockCodes:
+    - _BlockID: 0
+      Position:
+      - {x: 64.49045, y: 8.68, z: 100}
+      Content: '#include <bits/stdc++.h>
+
+        using namespace std;'
+    - _BlockID: 1
+      Position:
+      - {x: 64.49045, y: 8.68, z: 98}
+      Content: "int main() {\r\r\n    int a = 10;\r\n    int b = 20;"
+    - _BlockID: 2
+      Position:
+      - {x: 70, y: 20, z: 72.3}
+      - {x: 114.5, y: 20, z: 112.6}
+      Content: temp = a;
+    - _BlockID: 3
+      Position:
+      - {x: 61.1, y: 20, z: 114.2}
+      - {x: 106.4, y: 20, z: 63.4}
+      Content: a = b;
+    - _BlockID: 4
+      Position:
+      - {x: 126.1, y: 20, z: 42.6}
+      - {x: 48.5, y: 20, z: 43.2}
+      Content: b = temp;
+    - _BlockID: 5
+      Position:
+      - {x: 64.49045, y: 8.68, z: 90}
+      Content: 'return 0;
+
+        }'
+    - _BlockID: 66
+      Position:
+      - {x: 126.6, y: 20, z: 83.5}
+      - {x: 120.2, y: 20, z: 58.2}
+      Content: temp = b;
+    - _BlockID: 77
+      Position:
+      - {x: 107.6, y: 20, z: 117}
+      - {x: 87, y: 20, z: 123.4}
+      Content: temp = 3;
+  - _LevelID: 3
+    GatePosition: {x: 108, y: 7.62, z: 104}
+    Quiz: 1
+    QuestionContent: 
+    SlotCodes: []
+    BlockCodes: []
