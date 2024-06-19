@@ -137,13 +137,12 @@ MonoBehaviour:
       Content: "int main() {\r\r\n    int a = 10;\r\n    int b = 20;"
     - _BlockID: 2
       Position:
-      - {x: 70, y: 20, z: 72.3}
-      - {x: 114.5, y: 20, z: 112.6}
+      - {x: 70, y: 10, z: 72.3}
       Content: temp = a;
     - _BlockID: 3
       Position:
-      - {x: 61.1, y: 20, z: 114.2}
-      - {x: 106.4, y: 20, z: 63.4}
+      - {x: 61.1, y: 30, z: 114.2}
+      - {x: 106.4, y: 30, z: 63.4}
       Content: a = b;
     - _BlockID: 4
       Position:
