@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4804627247419278950}
   - component: {fileID: 7190212863106869802}
   - component: {fileID: 1931740739561854152}
+  - component: {fileID: 5551113281131580338}
   m_Layer: 0
   m_Name: ItemQuizDialog
   m_TagString: Untagged
@@ -119,6 +120,9 @@ MonoBehaviour:
   Content: 
   CorrectAnswer: 0
   ison: 0
+  _animation: {fileID: 5551113281131580338}
+  AnimationCorrect: Correct
+  AnimationInCorrect: InCorrect
 --- !u!222 &4804627247419278950
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -183,6 +187,27 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!95 &5551113281131580338
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 875435430894311169}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c3f9bfa8e12d6cf48acdc0a0d72e183a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2430511835789082473
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,6 +11,9 @@ public class ItemQuiz : MonoBehaviour
     public string Content;
     public bool CorrectAnswer = false;
     public bool ison;
+    public Animator _animation;
+    public string AnimationCorrect = "Correct";
+    public string AnimationInCorrect = "InCorrect";
     // Start is called before the first frame update
     void Start()
     {
@@ -22,27 +25,43 @@ public class ItemQuiz : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (this.Toggle.group.AnyTogglesOn())
+        {
+            this.Toggle.interactable = false;
+        }
+        else
+        {
+            this.Toggle.interactable= true;
+        }
     }
     public void clickitem()
     {
         if (this.CorrectAnswer && Toggle.isOn)
-        {
-            //UIManager.Instance.GetComponent<QuizDialog>().GetQuizAndSetup();
-            //Trả lời đúng
-            Debug.Log("Đúng");
-            GameManager.Instance.CorrectAnswer();
-        }
-        else
-        {
-            if (Toggle.isOn)
-            {
-                Debug.Log("Sai");
-                GameManager.Instance.IncorrectAnswser();
-                Toggle.isOn = false;
+           {
+                //UIManager.Instance.GetComponent<QuizDialog>().GetQuizAndSetup();
+                //Trả lời đúng
+                //Debug.Log("Đúng");
+                _animation.Play(AnimationCorrect);
             }
+            else
+            {
+                if (Toggle.isOn)
+                {
+                    //Debug.Log("Sai");
+                    _animation.Play(AnimationInCorrect);
+                }
                 //Trả lời sai
-        }
+            }
+    }
+    public void IsCorrect_AnimationRun()
+    {
+        GameManager.Instance.CorrectAnswer();
+        Toggle.isOn = false;
+    }
+    public void IsInCorrect_AnimationRun()
+    {
+        GameManager.Instance.IncorrectAnswser();
+        Toggle.isOn = false;
     }
     public void Setcontent(string text)
     {
