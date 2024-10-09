@@ -51,6 +51,11 @@ public class DialogBase : MonoBehaviour
             iconSfx.sprite = UIManager.Instance.sprites[0];
         }
     }
+    public void HandleClickLeaveLevel()
+    {
+        SoundManager.Instance.SoundClickButtonUI();
+        GameManager.Instance.OnHomeScene();
+    }
     public void checkAudio()
     {
         if (SoundManager.Instance.SoundSFX)

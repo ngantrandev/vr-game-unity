@@ -80,7 +80,22 @@ public class GameManager : MonoSingleton<GameManager>
     public void OnJonGame(LevelConfig config)
     {
         this._CurrentPlayinglevel = config;
-        UnityEngine.SceneManagement.SceneManager.LoadScene(NumberScene_PlayGame_1);
+        switch(_CurrentLevel)
+        {
+            case 0:
+                UnityEngine.SceneManagement.SceneManager.LoadScene(NumberScene_PlayGame_1);
+                break;
+            case 1:
+                UnityEngine.SceneManagement.SceneManager.LoadScene(NumberScene_PlayGame_2);
+                break;
+            case 2:
+                UnityEngine.SceneManagement.SceneManager.LoadScene(NumberScene_PlayGame_3);
+                break;
+            case 3:
+                StartGameLevel_4(_CurrentPlayinglevel);
+                break;
+        }
+
     }
     public void StartGameLevel_2(LevelConfig config)
     {
