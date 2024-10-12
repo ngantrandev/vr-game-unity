@@ -70,6 +70,7 @@ public class ItemQuiz : MonoBehaviour
     }
     public void SetCorrectAnswer(bool Status)
     {
+        Debug.Log(Content);
         CorrectAnswer = Status;
     }
 }

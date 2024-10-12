@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -417,6 +416,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Device Simulator
       objectReference: {fileID: 0}
+    - target: {fileID: 5859984250692892321, guid: ec7042b4d6ef66d42bc7c6fac43e3ed9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -547,11 +551,51 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1989040244}
+    - targetCorrespondingSourceObject: {fileID: 4624822970076067380, guid: ab6504db92806c64c8d1b9a1c95da846,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1989040245}
     - targetCorrespondingSourceObject: {fileID: 2230447927607777127, guid: ab6504db92806c64c8d1b9a1c95da846,
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 36353534}
   m_SourcePrefab: {fileID: 100100000, guid: ab6504db92806c64c8d1b9a1c95da846, type: 3}
+--- !u!114 &986025198 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2040621002385897845, guid: ab6504db92806c64c8d1b9a1c95da846,
+    type: 3}
+  m_PrefabInstance: {fileID: 986025197}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caff514de9b15ad48ab85dcff5508221, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &986025199 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6606434179649885094, guid: ab6504db92806c64c8d1b9a1c95da846,
+    type: 3}
+  m_PrefabInstance: {fileID: 986025197}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caff514de9b15ad48ab85dcff5508221, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &986025200 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2869966123645539168, guid: ab6504db92806c64c8d1b9a1c95da846,
+    type: 3}
+  m_PrefabInstance: {fileID: 986025197}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989040237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03a5df2202a8b96488c744be3bd0c33e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1063101174
 GameObject:
   m_ObjectHideFlags: 0
@@ -942,6 +986,7 @@ Terrain:
   m_DetailObjectDensity: 1
   m_HeightmapPixelError: 5
   m_SplatMapDistance: 1000
+  m_HeightmapMinimumLODSimplification: 0
   m_HeightmapMaximumLOD: 0
   m_ShadowCastingMode: 2
   m_DrawHeightmap: 1
@@ -1100,6 +1145,29 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 2.12, z: 1}
   m_Center: {x: 0, y: -0.55, z: 0}
+--- !u!114 &1989040245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989040237}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc4f2c0214c9b494fa7eb5b8b2c02885, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_System: {fileID: 986025200}
+  m_TurnAmount: 45
+  m_DebounceTime: 0.5
+  m_EnableTurnLeftRight: 1
+  m_EnableTurnAround: 1
+  m_DelayTime: 0
+  m_TurnUsage: 0
+  m_Controllers:
+  - {fileID: 986025199}
+  - {fileID: 986025198}
+  m_DeadZone: 0.75
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

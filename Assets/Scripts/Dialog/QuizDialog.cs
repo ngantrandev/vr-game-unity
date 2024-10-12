@@ -76,7 +76,7 @@ public class QuizDialog : DialogBase
         itemC.GetComponent<ItemQuiz>().Setcontent(_quiz.AnswerC);
         GameObject itemD = Instantiate(ItemQuiz_Prefab, UIManager.Instance._CurrentDialog.GetComponent<QuizDialog>().Container.transform);
         itemD.GetComponent<ItemQuiz>().Setcontent(_quiz.AnswerD);
-        switch (_quiz.CorrectAnswer)
+        switch (_quiz.CorrectAnswer.Trim().ToUpper())
         {
             case "A":
                 {
