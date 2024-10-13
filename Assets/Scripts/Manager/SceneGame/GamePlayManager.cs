@@ -29,6 +29,7 @@ public class GamePlayManager : MonoSingleton<GamePlayManager>
             }
             foreach(BlockCodeAttribute block in _LevelConfig.BlockCodes)
             {
+                Debug.Log(block.Position.Length);
                 Vector3 _Position = block.Position[this.RandomInrange(0,block.Position.Length-1)];
                 GameObject _CodeBlock = Instantiate(CodeBlock,_Position, Quaternion.identity);
                 _CodeBlock.GetComponent<BlockCode>().SetBlockID(block._BlockID);

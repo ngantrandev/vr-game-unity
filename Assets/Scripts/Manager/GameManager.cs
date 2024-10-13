@@ -23,11 +23,13 @@ public class GameManager : MonoSingleton<GameManager>
     // Start is called before the first frame update
     private void Awake()
     {
-        _CurrentLevel = 0;
-        _CurrentPlayinglevel = GameManager.Instance.GetResourceFile<LevelConfigs>("LevelConfigs").GetConfig()[_CurrentLevel];
+        //_CurrentLevel = 0;
+        //_CurrentPlayinglevel = GameManager.Instance.GetResourceFile<LevelConfigs>("LevelConfigs").GetConfig()[_CurrentLevel];
     }
     void Start()
     {
+        _CurrentLevel = 0;
+        _CurrentPlayinglevel = GameManager.Instance.GetResourceFile<LevelConfigs>("LevelConfigs").GetConfig()[_CurrentLevel];
         OnHomeScene();
     }
 
